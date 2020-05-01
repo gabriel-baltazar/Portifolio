@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portifólio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8aba2b2f12.js" crossorigin="anonymous"></script>
+    <style>
+        .foto-perfil {
+            height: 25%;
+            width: 25%;
+            max-width: 100%;
+            border-radius: 50%;
+        }
+
+        .icone {
+            color: black;
+            padding-left: 5px;
+            font-size: 25px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- codigo que cria o cabeçalho da página-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Gabriel Baltazar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <!-- "mr auto" coloca a nav bar no canto direito-->
+
+            </ul>
+            <!--Aqui vamos colocar todos os items da nossa pagina-->
+            <ul class="navbar-nav">
+                <!--Item Projetos-->
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Projetos</a>
+                </li>
+                <!--Item Sobre mim-->
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre mim</a>
+                </li>
+                <!--Item Contato-->
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Aqui inserimos a foto de perfil e redes sociais e breve descrição sobre-->
+    <section class="jumbotron text-center">
+        <div class="container">
+            <img class="foto-perfil" src="https://i.ibb.co/HdF3Wpy/foto-perfil-portifolio.jpg" alt="">
+            <h1 class="jumbotron-heading">Gabriel Baltazar</h1>
+            <p class="lead text-muted">Estudante de Analise e Desenvolvimento de Sistemas</p>
+            <p>
+                <a href="#" class="btn btn-dark my-2">Contato</a>
+            </p>
+            <a href="https://www.linkedin.com/in/gabriel-baltazar/" target="blank" rel="noopner"><i
+                    class="fab fa-linkedin icone"></i></a>
+            <a href="https://github.com/gabriel-baltazar" target="blank" rel="noopner"><i
+                    class="fab fa-github icone"></i></a>
+            <a href="https://www.instagram.com/gbaltazar.exe/" target="blank" rel="noopner"><i
+                    class="fab fa-instagram icone"></i></a>
+        </div>
+    </section>
+    <div class="album py-5 bg-light">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-6 shadow-sm">
+                        <img class="card-img-top"
+                            data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                            alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
+                            src="https://i.ibb.co/DwqZPRk/SIte1.png"
+                            data-holder-rendered="true">
+                        <div class="card-body">
+                            <p class="card-text">Este é um card maior e que suporta texto abaixo, como uma introdução
+                                mais natural ao conteúdo adicional.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                                </div>
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+</html>
