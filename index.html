@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/8aba2b2f12.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <style>
         .foto-perfil {
             height: 25%;
@@ -15,20 +18,86 @@
             max-width: 100%;
             border-radius: 50%;
         }
-
+        .logo{
+            height: 30%;
+            max-height: 50%;
+            width: 30%;
+            max-width: 50%;
+        }
         .icone {
             color: black;
             padding-left: 5px;
             font-size: 25px;
-
         }
+        .corprimaria {
+        background-color: #ffdb71;
+        }
+        .corsecundaria{
+            background-color:#2c3e50;
+        }
+
+        .titulospretos {
+        text-decoration:underline;
+        text-underline-position: below;
+        padding-bottom: 20px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color:black;
+        }
+        .titulosamarelos {
+        text-decoration:underline;
+        text-underline-position: below;
+        padding-bottom: 20px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color:#ffdb71;
+        }
+        .textobranco{
+        color:white !important;
+    }
+    .nome{
+        margin-left: -111px
+    
+    }
+    .jumbotron{
+        margin-bottom: 0px;
+    }
+    .textofooter {
+        margin: 0px;
+        padding-top:15px;
+        padding-bottom:15px ;
+    }
+    .oportunidades1{
+        padding-top: 60px;
+    }
+    .oportunidades2{
+        padding-bottom: 60px;
+        margin-bottom:0px;
+    }
+    .textopreto{
+        color: black !important;
+    }
+    .fundobranco
+    {
+        background-color: white;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+        body{
+            
+            font-family: 'Montserrat', sans-serif;
+            color: Black !important;
+        }
+
     </style>
 </head>
 
 <body>
     <!-- codigo que cria o cabeçalho da página-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Gabriel Baltazar</a>
+    <nav class="navbar navbar-expand-lg navbar-dark corsecundaria ">
+        <a href="#"><img class="logo" src="https://i.ibb.co/YPSCDKB/logo.png" alt="logo" border="0"></a>
+        <a class="navbar-brand textobranco nome" href="#">Gabriel Baltazar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
             <span class="navbar-toggler-icon"></span>
@@ -39,30 +108,30 @@
 
             </ul>
             <!--Aqui vamos colocar todos os items da nossa pagina-->
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ">
                 <!--Item Projetos-->
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Projetos</a>
+                <li class="nav-item ">
+                    <a class="nav-link textobranco" href="#projetos">Projetos</a>
                 </li>
                 <!--Item Sobre mim-->
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre mim</a>
+                <li class="nav-item ">
+                    <a class="nav-link textobranco" href="#sobremim">Sobre mim</a>
                 </li>
                 <!--Item Contato-->
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contato</a>
+                    <a class="nav-link textobranco" href="#contato">Contato</a>
                 </li>
             </ul>
         </div>
     </nav>
     <!--Aqui inserimos a foto de perfil e redes sociais e breve descrição sobre-->
-    <section class="jumbotron text-center">
+    <section class="jumbotron text-center corprimaria">
         <div class="container">
             <img class="foto-perfil" src="https://i.ibb.co/HdF3Wpy/foto-perfil-portifolio.jpg" alt="">
-            <h1 class="jumbotron-heading">Gabriel Baltazar</h1>
-            <p class="lead text-muted">Estudante de Analise e Desenvolvimento de Sistemas</p>
+            <h1 class="jumbotron-heading ">Gabriel Baltazar</h1>
+            <p class="lead ">Estudante de Análise e Desenvolvimento de Sistemas</p>
             <p>
-                <a href="#" class="btn btn-dark my-2">Contato</a>
+                <a href="mailto:gabrielaltazar@hotmail.com" class="btn btn-dark my-2">Contato</a>
             </p>
             <a href="https://www.linkedin.com/in/gabriel-baltazar/" target="blank" rel="noopner"><i
                     class="fab fa-linkedin icone"></i></a>
@@ -72,19 +141,20 @@
                     class="fab fa-instagram icone"></i></a>
         </div>
     </section>
-    <div class="album py-5 bg-light">
+    <!-- Meus Projetos -->
+    <div class="album py-5">
         <div class="container">
-
+<h2 class="jumbotron-heading text-center titulosamarelos" id="projetos">Projetos</h2>
             <div class="row">
                 <div class="col-md-4">
                     <div class="card mb-6 shadow-sm">
                         <img class="card-img-top"
                             data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
                             alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
-                            src="https://i.ibb.co/DwqZPRk/SIte1.png"
-                            data-holder-rendered="true">
+                            src="https://i.ibb.co/DwqZPRk/SIte1.png" data-holder-rendered="true">
                         <div class="card-body">
-                            <p class="card-text">Este site foi desenvolvido para interação entre o profissional e os clientes e como meio de divulgação do trabalho.</p>
+                            <p class="card-text">Este site foi desenvolvido para interação entre o profissional e os
+                                clientes e como meio de divulgação do trabalho.</p>
                             <ul>
                                 <li>HTML</li>
                                 <li>CSS</li>
@@ -93,8 +163,12 @@
                             </ul>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <a href="https://fbservicosereparos.netlify.app/" target="blank" rel="noopner"><button type="button" class="btn btn-sm btn-outline-success">Ver Projeto</button></a>
-                                    <a href="https://github.com/gabriel-baltazar/Projeto_001_Site_paitrabalho" target="blank" rel="noopner"><button type="button" class="btn btn-sm btn-outline-primary">Código</button></a>
+                                    <a href="https://fbservicosereparos.netlify.app/" target="blank"
+                                        rel="noopner"><button type="button" class="btn btn-sm btn-outline-success">Ver
+                                            Projeto</button></a>
+                                    <a href="https://github.com/gabriel-baltazar/Projeto_001_Site_paitrabalho/blob/master/Fb_servicos_e_reparos/Projeto001_Site_trabalho/index.html"
+                                        target="blank" rel="noopner"><button type="button"
+                                            class="btn btn-sm btn-outline-primary">Código</button></a>
                                 </div>
                             </div>
                         </div>
@@ -103,6 +177,29 @@
             </div>
         </div>
     </div>
+<!-- Sobre mim-->  
+    <section class="jumbotron text-center corprimaria">
+    <div class="container">
+<h2 class="jumbotron-heading titulospretos" id="sobremim">Sobre mim</h2>
+<p class="lead">Olá meu nome é Gabriel e sou estudante do curso de Análise e Desenvolvimento de Sistemas, sou apaixonado pela técnologia e desenvolvimento. Hoje atuo como Técnico de distribuição de energia elétrica, e estou buscando a cada dia novos desafios e aprendizado</p>
+</div>
+</section>
+
+<!-- Contato -->
+<section>
+    <div>
+        <div class="container-fluid ">
+            <h3 class="text-center titulosamarelos oportunidades1" id="contato">Disponível para oportunidades</h3>
+            <a href="mailto:gabrielaltazar@hotmail.com"><h4 class="text-center oportunidades2 textopreto">gabrielaltazar@hotmail.com</h4></a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center corsecundaria textobranco textofooter">
+    <p>Copyright 2020 Gabriel Baltazar</p>
+</footer>
+
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
