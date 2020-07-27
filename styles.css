@@ -49,8 +49,8 @@ margin-left: -111px
 margin-bottom: 0px;
 }
 .textofooter {
-margin: 0px;
-padding-top:15px;
+margin: -60px;
+padding-top:20px;
 padding-bottom:15px ;
 }
 .oportunidades1{
@@ -66,6 +66,9 @@ color: black !important;
 .fundobranco
 {
 background-color: white;
+}
+.email {
+    margin-bottom: 30px;
 }
 html{
 scroll-behavior: smooth;
